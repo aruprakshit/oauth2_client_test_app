@@ -1,0 +1,8 @@
+<h1> Authorization Page / Display Page </h1>
+<% if session[:current_access_token] %>
+  <p> Here's the resource owner (user) </p>
+  <%= @data[0]["email"] %>
+  <p> <%= link_to 'Go back to Main App', Rails.configuration.oauth_credentials['oauth_provider_url'] %></p>
+<% else %>
+  = link_to 'Authorize via Your Main App/OAuth Server', new_oauth_token_path
+<% end %>
