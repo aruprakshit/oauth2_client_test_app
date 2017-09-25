@@ -1,5 +1,7 @@
 {
   "name": "oauth2_client_test_app",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "4.0.0-beta"
+  }
 }
