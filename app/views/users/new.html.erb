@@ -1,6 +1,6 @@
 <h1>Registration</h1>
 
-<%= form_for @user do |f| %>
+<%= form_for @user, html: {class: 'mx-auto w-50'} do |f| %>
   <div class="form-group">
     <%= f.label :name %>
     <%= f.text_field :name, class: 'form-control', required: true %>

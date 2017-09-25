@@ -1,5 +1,5 @@
 <h1>Log In</h1>
-<%= form_tag sessions_path, method: :post do %>
+<%= form_tag sessions_path, method: :post, class: 'mx-auto w-50' do %>
   <div class="form-group">
     <%= label_tag :email %>
     <%= email_field_tag :email, nil, class: 'form-control', required: true %>
