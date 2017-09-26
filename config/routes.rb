@@ -12,5 +12,6 @@ Rails.application.routes.draw do
 
   get '/oauth/callback', to: 'data#create_session'
   get '/index', to: 'data#index', as: :datas
+  get '/shutdown', to: 'data#shutdown'
   root to: 'users#index'
 end
