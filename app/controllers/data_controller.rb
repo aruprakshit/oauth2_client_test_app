@@ -21,6 +21,6 @@ class DataController < ApplicationController
     req_params = "client_id=#{oauth_token}&client_secret=#{oauth_secret}&code=#{params[:code]}&grant_type=authorization_code&redirect_uri=#{oauth_redirect_uri}"
     response = HTTParty.post("#{oauth_provider_url}/oauth/token", body: req_params)
     session[:current_access_token] = response['access_token']
-    redirect_to root_path
+    redirect_to datas_path
   end
 end

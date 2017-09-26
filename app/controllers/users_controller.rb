@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class UsersController < AuthenticationsController
   before_action :require_login, only: [:index]
 
   def new
