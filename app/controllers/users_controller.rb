@@ -1,6 +1,6 @@
 class UsersController < AuthenticationsController
   before_action :require_login, only: [:index]
-  before_action :check_shudtdown
+  before_action :check_shutdown
 
   def new
     @user = User.new

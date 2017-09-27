@@ -1,6 +1,6 @@
 class DataController < ApplicationController
   before_action :require_login, only: [:index]
-  before_action :check_shudtdown, only: [:index]
+  # before_action :check_shutdown, only: [:index]
   before_action :authenticate_with_token, only: [:shutdown]
 
   def index

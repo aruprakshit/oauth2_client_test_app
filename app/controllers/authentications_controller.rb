@@ -6,7 +6,7 @@ class AuthenticationsController < ApplicationController
     redirect_to log_in_path
   end
 
-  def check_shudtdown
-    logout if current_user.shutdown?
+  def check_shutdown
+    logout if current_user && current_user.shutdown?
   end
 end
