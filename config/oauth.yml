@@ -1,5 +1,5 @@
 development:
-  oauth_token: '1bc4d9bd92e6ed587fc5d1a44ae6b488d6f02ae764f76ba713e9cb76ce5df8e1'
-  oauth_secret: '820082e5b5c9bebded31cdf1be7e4a0c62d95bf129a97c34970f4e54dd999c05'
+  oauth_token: '97477f1e41f9efa1da35e590bf97dbffbec1876a2d9b95654950043eb11d0461'
+  oauth_secret: '870713124bef2b0a0519db6dd8e2b49bd80af55a5377e802ad7780597bbb4e6a'
   oauth_provider_url: 'http://localhost:3000'
   oauth_redirect_uri: 'http://localhost:3001/oauth/callback'

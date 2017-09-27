@@ -20,7 +20,7 @@ class DataController < ApplicationController
     if user = User.find_by(email: email)
       req_params = "client_id=#{oauth_token}&client_secret=#{oauth_secret}&code=#{params[:code]}&grant_type=authorization_code&redirect_uri=#{oauth_redirect_uri}"
       response = HTTParty.post("#{oauth_provider_url}/oauth/token", body: req_params)
-      user.update_attributes public_key: public_key, current_access_token: params[:code]
+      user.update_columns public_key: public_key, current_access_token: response['access_token']
       auto_login(user)
 
       redirect_to datas_path
